@@ -1,0 +1,77 @@
+🔥 RESET
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html, body {
+  background: black;
+  color: white;
+  overflow-x: hidden;
+} */
+
+/* 🔥 HERO */
+.hero {
+  height: 200vh; /* ✅ scroll ke liye space */
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* overflow: hidden; */
+}
+
+/* 🔥 TEXT */
+h1 {
+  font-size: 70px;
+  letter-spacing: 18px;
+  z-index: 2;
+}
+
+/* 🔥 STATS */
+.stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.stats h2 {
+  font-size: 32px;
+}
+
+.stats p {
+  color: gray;
+}
+
+/* 🔥 CAR */
+.car {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,0.9));
+}
+
+/* 🔥 BACKGROUND */
+.bg {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  z-index: 1;
+
+  background: 
+    radial-gradient(circle at 30% 30%, rgba(255, 0, 150, 0.15), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(0, 200, 255, 0.15), transparent 40%),
+    radial-gradient(circle at center, #111, #000);
+
+  filter: blur(40px);
+}
